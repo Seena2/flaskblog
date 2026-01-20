@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block title %}Page Not Found{% endblock %}
+{%block content %}
+<div class="content-section text-center">
+  <h2 class="mb-4">You dont have permission to do that(403)</h2>
+  <p class="lead">
+    Sorry, you are not authorized to access this page. please check your account
+    permissions.
+  </p>
+  <a href="{{ url_for('main.home') }}" class="btn btn-primary mt-3"
+    >Go Back Home</a
+  >
+</div>
+{% endblock %}
